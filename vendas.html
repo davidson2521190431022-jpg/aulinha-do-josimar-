@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos | Minha Loja</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        /* BANNER */
+        .banner {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .banner h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* PRODUTOS */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .titulo h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .titulo p {
+            color: #666;
+        }
+
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        /* CARD */
+        .produto {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .produto:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .info {
+            padding: 20px;
+        }
+
+        .info h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .descricao {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .preco {
+            color: #2563eb;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .botao {
+            display: block;
+            width: 100%;
+            padding: 13px;
+            background: #2563eb;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #1d4ed8;
+        }
+
+        /* RODAPÉ */
+        footer {
+            margin-top: 70px;
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer p {
+            color: #aaa;
+        }
+
+        /* CELULAR */
+        @media (max-width: 600px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .banner h1 {
+                font-size: 32px;
+            }
+
+            .banner {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="logo">
+            🛒 Minha Loja
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="vendas.html">Produtos</a>
+        </nav>
+
+    </header>
+
+
+    <!-- BANNER -->
+    <section class="banner">
+
+        <h1>Ofertas Especiais 🔥</h1>
+
+        <p>
+            Confira nossos produtos e aproveite os melhores preços.
+        </p>
+
+    </section>
+
+
+    <!-- PRODUTOS -->
+    <main class="container">
+
+        <div class="titulo">
+
+            <h2>Nossos Produtos</h2>
+
+            <p>
+                Escolha o produto que você deseja comprar.
+            </p>
+
+        </div>
+
+
+        <div class="produtos">
+
+
+            <!-- PRODUTO 1 -->
+            <div class="produto">
+
+                <img
+                    src="https://via.placeholder.com/500x400"
+                    alt="Produto 1">
+
+                <div class="info">
+
+                    <h3>Produto Premium</h3>
+
+                    <p class="descricao">
+                        Produto de excelente qualidade,
+                        perfeito para você.
+                    </p>
+
+                    <div class="preco">
+                        R$ 49,90
+                    </div>
+
+                    <a href="#" class="botao">
+                        Comprar agora
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 2 -->
+            <div class="produto">
+
+                <img
+                    src="https://via.placeholder.com/500x400"
+                    alt="Produto 2">
+
+                <div class="info">
+
+                    <h3>Produto Especial</h3>
+
+                    <p class="descricao">
+                        Uma ótima escolha para quem
+                        procura qualidade e preço.
+                    </p>
+
+                    <div class="preco">
+                        R$ 79,90
+                    </div>
+
+                    <a href="#" class="botao">
+                        Comprar agora
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 3 -->
+            <div class="produto">
+
+                <img
+                    src="https://via.placeholder.com/500x400"
+                    alt="Produto 3">
+
+                <div class="info">
+
+                    <h3>Produto Exclusivo</h3>
+
+                    <p class="descricao">
+                        Aproveite essa oferta por tempo
+                        limitado.
+                    </p>
+
+                    <div class="preco">
+                        R$ 99,90
+                    </div>
+
+                    <a href="#" class="botao">
+                        Comprar agora
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 4 -->
+            <div class="produto">
+
+                <img
+                    src="https://via.placeholder.com/500x400"
+                    alt="Produto 4">
+
+                <div class="info">
+
+                    <h3>Produto Deluxe</h3>
+
+                    <p class="descricao">
+                        Qualidade, segurança e ótimo
+                        custo-benefício.
+                    </p>
+
+                    <div class="preco">
+                        R$ 129,90
+                    </div>
+
+                    <a href="#" class="botao">
+                        Comprar agora
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h3>🛒 Minha Loja</h3>
+
+        <p>
+            © 2026 Minha Loja. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

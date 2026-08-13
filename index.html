@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Loja</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* PÁGINA INICIAL */
+
+        .hero {
+
+            min-height: 80vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 40px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.55),
+                    rgba(0,0,0,0.55)
+                ),
+                url("imagens/banner.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+        }
+
+        .hero-conteudo {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        /* BOTÃO */
+
+        .botao {
+
+            display: inline-block;
+
+            background: #2563eb;
+
+            color: white;
+
+            padding: 16px 35px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #1d4ed8;
+            transform: scale(1.05);
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 600px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <div class="logo">
+            🛒 Minha Loja
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="vendas.html">
+                Produtos
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- TELA INICIAL -->
+
+    <section class="hero">
+
+        <div class="hero-conteudo">
+
+            <h1>
+                Bem-vindo à Minha Loja
+            </h1>
+
+            <p>
+                Encontre os melhores produtos
+                com preços incríveis.
+            </p>
+
+            <!-- LEVA PARA A PÁGINA DE VENDAS -->
+
+            <a
+                href="vendas.html"
+                class="botao">
+
+                🛍️ Ver produtos
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            © 2026 Minha Loja
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
